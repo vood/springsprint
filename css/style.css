@@ -19,11 +19,11 @@ div, body, .ss-base-body {
 
 #place .span7 {
     color: white;
-    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 3px #000;
 }
 
 #YMapsID-2326 {
-    box-shadow: 1px 1px 1px #000;
+    box-shadow: 1px 1px 3px #000;
 }
 
 #registration {
@@ -32,4 +32,11 @@ div, body, .ss-base-body {
 
 #registration .row {
     background-color: #fff;
+    box-shadow: 1px 1px 3px #000;
+    margin-bottom: 30px;
+}
+
+.fb-like-box {
+  padding: 20px 0px;
+
 }
