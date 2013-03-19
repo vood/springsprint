@@ -30,13 +30,23 @@ div, body, .ss-base-body {
     padding-top: 20px;
 }
 
-#registration .row {
+#registration > .row {
     background-color: #fff;
     box-shadow: 1px 1px 3px #000;
     margin-bottom: 30px;
+    padding-bottom: 50px;
 }
 
 .fb-like-box {
   padding: 20px 0px;
 
+}
+
+.img-polaroid {
+    float: left;
+    margin: 10px 10px 10px 0px;
+}
+
+.gradient {
+    background-image: -webkit-linear-gradient(top, transparent 0%, #fff 800px);
 }
