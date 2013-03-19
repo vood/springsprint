@@ -1,0 +1,35 @@
+body {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url('../images/background.jpg');
+}
+
+div, body, .ss-base-body {
+  font-family: "PT Sans Narrow";
+    font-size: 19px;
+}
+
+.brand {
+    color: yellow;
+}
+
+.brand span, h1 span {
+    color: green;
+}
+
+#place .span7 {
+    color: white;
+    text-shadow: 1px 1px 1px #000;
+}
+
+#YMapsID-2326 {
+    box-shadow: 1px 1px 1px #000;
+}
+
+#registration {
+    padding-top: 20px;
+}
+
+#registration .row {
+    background-color: #fff;
+}
