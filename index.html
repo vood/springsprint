@@ -2,7 +2,9 @@
 
 <html>
 <head>
+
     <title>SpringSprint</title>
+    <meta charset="utf-8" />
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="font/stylesheet.css" rel="stylesheet">
@@ -47,63 +49,20 @@
                 </div>
             </div>
             <div class="span5">
-                <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту  (начало) -->
-                <script
-                        src="http://api-maps.yandex.ru/1.1/?key=ALqaKk8BAAAAK6iRfwIAIdglkQyHcG2J1aQEldGmWthMfVcAAAAAAAAAAAAFWENks3lscYrWN2Ho9T0rO_z5iA==&modules=pmap&wizard=constructor"
-                        type="text/javascript"></script>
-                <script type="text/javascript">
-                    YMaps.jQuery(window).load(function () {
-                        var map = new YMaps.Map(YMaps.jQuery("#YMapsID-2326")[0]);
-                        map.setCenter(new YMaps.GeoPoint(27.52647, 53.921533), 16, YMaps.MapType.MAP);
-                        map.addControl(new YMaps.Zoom());
-                        map.addControl(new YMaps.ToolBar());
-                        YMaps.MapType.PMAP.getName = function () {
-                            return "Народная";
-                        };
-                        map.addControl(new YMaps.TypeControl([
-                            YMaps.MapType.MAP,
-                            YMaps.MapType.SATELLITE,
-                            YMaps.MapType.HYBRID,
-                            YMaps.MapType.PMAP
-                        ], [0, 1, 2, 3]));
-
-                        YMaps.Styles.add("constructor#pmrdmPlacemark", {
-                            iconStyle: {
-                                href: "http://api-maps.yandex.ru/i/0.3/placemarks/pmrdm.png",
-                                size: new YMaps.Point(28, 29),
-                                offset: new YMaps.Point(-8, -27)
-                            }
-                        });
-
-                        map.addOverlay(createObject("Placemark", new YMaps.GeoPoint(27.526599, 53.92152), "constructor#pmrdmPlacemark", "Гостиница Виктория"));
-
-                        function createObject(type, point, style, description) {
-                            var allowObjects = ["Placemark", "Polyline", "Polygon"],
-                                    index = YMaps.jQuery.inArray(type, allowObjects),
-                                    constructor = allowObjects[(index == -1) ? 0 : index];
-                            description = description || "";
-
-                            var object = new YMaps[constructor](point, {style: style, hasBalloon: !!description});
-                            object.description = description;
-
-                            return object;
-                        }
-                    });
-                </script>
-
-                <div id="YMapsID-2326" style="width:470px;height:200px; margin-top: 10px"></div>
-                <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец) -->
-            </div>
+<div id="YMapsID-2326">
+<script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=6aPV7rUykqrpBMUMNth1Sek-A9IVOSpG&width=470&height=200"></script>                
+            </div></div>
         </div>
     </section>
     <section id="registration">
         <div class="row">
             <div class="span8">
-                <iframe src="https://docs.google.com/forms/d/1iSHgHeYVa_oEF1gti1O8IVm66Yk-Y-UsF4P7fwA3nio/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Загрузка...</iframe>
+              <h2>Регистрация</h2>
+              <p>Для участия Вам необходимо пройти регистрацию по <a href="https://docs.google.com/forms/d/1iSHgHeYVa_oEF1gti1O8IVm66Yk-Y-UsF4P7fwA3nio/viewform">этой</a> ссылке.
             </div>
             <div class="span4">
                 <div class="fb-like-box" data-href="http://www.facebook.com/pages/PhpDevBy/157275201049394"
-                     data-width="292"
+                     data-width="350"
                      data-show-faces="true" data-height="372" data-stream="false" data-header="true"></div>
             </div>
         </div>
