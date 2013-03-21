@@ -1,6 +1,6 @@
 
 set :application, "springsprint"
-set :repository, 'git@bitbucket.org:vood/springsprint.git'
+set :repository, 'git@github.com:vood/springsprint.git'
 
 set :location, "78.47.197.109"
 
