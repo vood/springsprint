@@ -4,8 +4,11 @@ body {
     background-image: url('../images/background.jpg');
 }
 
-div, body, .ss-base-body {
+.nav, .brand, .btn, h1, h2, h3, h4, h5, .ss-base-body {
   font-family: "PT Sans Narrow";
+}
+
+.nav, .brand {
     font-size: 19px;
 }
 
@@ -49,9 +52,16 @@ div, body, .ss-base-body {
 
 .gradient {
     background-image: -webkit-linear-gradient(top, transparent 0%, #fff 800px);
+    background-image: -moz-linear-gradient(top, transparent 0%, #fff 800px);
 }
 
 .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
     width: 99% !important;
     max-width: 370px;
+}
+
+.sponsor {
+    text-decoration: none;
+    float: right;
+    padding: 10px;
 }
